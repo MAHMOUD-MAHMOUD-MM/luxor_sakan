@@ -1,0 +1,171 @@
+
+.headm{
+    width: 100%;
+    padding: 25px 0;
+     background-color: #ffffff;
+}
+.head{
+
+   
+    text-align: center;
+}
+h1{
+   font-size: 42px;
+   font-weight: 700;
+   color: #111111;
+    margin: 0;
+    letter-spacing: 3px;
+    font-family: 'Atma', sans-serif; 
+    
+}
+.describ{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+   
+}
+.selection-card{
+    padding: 10px;
+    width: 80vw;
+    height: 400px;
+    background-color: #f4f7f6;
+    display: flex;
+    
+    flex-direction: column;
+    border-radius: 20px;
+
+}
+.main-content{
+   
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+
+
+.college{
+   
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 8px;
+}
+.college::-webkit-scrollbar {
+ width: 10px;
+}
+.college::-webkit-scrollbar-thumb{
+    background-color: #1d08087e;
+    border-radius: 10px;
+}
+.college::-webkit-scrollbar-thumb:hover{
+    background-color: #a8a8a8;
+}
+
+.a{
+     display: flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.img{
+    width: 90px;
+    height: 80px;
+    border-radius: 10px;
+    background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+
+}
+.college-name {
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+    text-decoration: none;
+    color: #333333;
+    font-size: 25px;         
+    font-weight: 500;        
+    text-align: right;
+}
+a:hover{
+    font-weight: 600;
+    color: #000000;
+    text-decoration: underline;
+
+}
+
+.main-footer {
+    width: 100%;
+    padding: 35px 20px;
+    background-color: #1a1a1a;   
+    color: #e0e0e0;               
+    text-align: center;        
+    border-top: 3px solid #2d2d2d; 
+    margin-top: 60px;            
+    font-family: system-ui, -apple-system, sans-serif;
+    box-sizing: border-box;
+}
+
+.main-footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+
+.footer-brand {
+    font-family: 'Atma', sans-serif;
+    font-weight: 600;
+    color: #ffffff;      
+}
+
+
+.dev-credit {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;                  
+    margin-top: 20px;
+    flex-wrap: wrap;            
+}
+
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;      
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #2ecc71;      
+    text-decoration: underline; 
+}
+
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366; 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;        
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2); 
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.whatsapp-btn:hover {
+    background-color: #1ebd56;  
+    transform: scale(1.05);     
+}

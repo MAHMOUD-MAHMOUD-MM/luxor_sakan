@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f9fa;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.parent{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.head1{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 3px solid #eef0f2;
+}
+
+
+h1{
+   font-size: 42px;
+   font-weight: 700;
+   color: #111111;
+   margin: 0;
+   letter-spacing: 3px;
+   font-family: 'Atma', sans-serif; 
+}
+
+
+.contain{
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+.c1{
+    flex: 1 1 280px;
+    max-width: 380px;
+    min-height: 200px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    text-align: right;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 18px; 
+}
+.slider-wrapper {
+    position: relative; 
+    width: 100%;
+    height: 220px;
+}
+.img-slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.img-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #ffffff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; 
+    transition: background-color 0.2s ease, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0.8;
+}
+
+
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+
+.slider-arrow.right-btn {
+    right: 12px;
+}
+.slider-arrow.left-btn {
+    left: 12px;
+}
+
+
+.slider-arrow:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+
+.slide {
+    flex: 0 0 100%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-snap-align: start; 
+}
+
+
+.describe {
+    display: flex;
+    justify-content: start;
+     flex-direction: column;
+    width: 100%;
+    height: auto;
+   
+}
+/* --- تنسيق عنوان الشقة والبادجات --- */
+.apartment-title {
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.apartment-badges {
+    display: flex;
+    flex-direction: column;    /* رص الداتا تحت بعضها بانتظام */
+    gap: 8px;                  /* مسافة أمان هادية بين السطور */
+}
+
+/* 🏷️ التنسيق الفخم للبادج الواحد */
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #f1f3f5; /* خلفية رمادية ناعمة ومريحة للعين */
+    color: #495057;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: fit-content;        /* البادج يلم نفسه على قد الكلام بالظبط */
+}
+
+/* تمييز سطر السعر والـ "شامل" باللون الأخضر الهادئ */
+.price-badge {
+    background-color: #e8f5e9; /* خلفية خضراء مريحة ترمز للمال والأمان */
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+.inclusive-text {
+    color: #2e7d32;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+/* --- 🟢 تنسيق زرار "اضغط للحجز" الفخم --- */
+.card-actions {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;                /* يفرش بعرض الكارت بالكامل لسهولة الضغط */
+    padding: 12px 0;
+    background-color: #25d366;  /* لون الأخضر التفاعلي المبهج */
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;      /* إلغاء الخط اللي تحت اللينك */
+    border-radius: 10px;        /* تنعيم حواف الزرار */
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.15); /* ضل ناعم بيدي عمق */
+    transition: all 0.2s ease;
+}
+
+/* تأثير الهوفر والتفاعل عند لمس الزرار */
+.book-btn:hover {
+    background-color: #1ebd56;  /* الأخضر يغمق سنة */
+    transform: translateY(-2px); /* الزرار يرتفع خفيف لفوق */
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
+}
+
+.book-btn:active {
+    transform: translateY(0) scale(0.98); /* زرار ينضغط لجوه سنة عند الكليك */
+}
