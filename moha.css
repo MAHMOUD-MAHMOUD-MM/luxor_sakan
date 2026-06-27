@@ -15,6 +15,25 @@ body{
    align-items: center;
    flex-direction: column;
 }
+   /* --- تنسيق كارت الفيديو الجديد --- */
+/* --- التعديل الجديد لظهور الفيديو كامل بدون قص --- */
+.video-wrapper {
+    position: relative; 
+    width: 100%;
+    height: 220px; /* الارتفاع الثابت للكارت */
+    background-color: #1a1a1a; /* خلفية داكنة ممتازة لملء الفراغات الجانبية للفيديو */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* التغيير السحري هنا: يظهر الفيديو كاملاً دون قصه من الأعلى والأسفل */
+    display: block;
+}
 
 .head1{
     width: 100%;
